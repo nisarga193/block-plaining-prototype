@@ -16,16 +16,17 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="AI-Powered Automatic Block Planning System - Prototype API")
 
 # allow the local Vite dev server to call this API
-import os
-
-ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    os.environ.get("FRONTEND_URL", "https://block-plaining-frontend.vercel.app"),
-]
+app = FastAPI(
+    title="AI-Powered Automatic Block Planning System - Prototype API"
+)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[o for o in ALLOWED_ORIGINS if o],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://block-plaining-frontend.vercel.app",
+    ],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
