@@ -20,7 +20,7 @@ import os
 
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    os.environ.get("FRONTEND_URL", "https://block-plaining-frontend.vercel.app/"),
+    os.environ.get("FRONTEND_URL", "https://block-plaining-frontend.vercel.app"),
 ]
 
 app.add_middleware(
