@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+venv/
+.venv/
+**/.venv/
+ENV/
+env/
+**/env/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Environment and secrets
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.pem
+*.key
+
+# FastAPI / backend runtime
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/.pytest_cache/
+
+# Database / local state
+*.sqlite3
+*.db
+*.sqlite
+
+# Logs and debug
+*.log
+logs/
+
+# Node / frontend
+node_modules/
+**/node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/coverage/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Testing coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Python packaging
+build/
+dist/
+*.egg
+
+# Ignore local generated artifacts
+backend/generated/
+frontend/.env.local
